@@ -1,0 +1,26 @@
+.flex-wrp {
+  display: flex;
+  display: -webkit-flex;
+}
+.section__title {
+  font-size: 16px;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align:center;
+  line-height: 100px;
+}
+.bc_green {
+  background-color: green;
+}
+.bc_red {
+  background-color: red;
+}
+.bc_blue {
+  background-color: blue;
+}
+.bc_red1 {
+  background-color: yellow;
+}
