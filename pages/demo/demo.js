@@ -11,7 +11,7 @@ Page({
     ],
     indicatorDots: true,
     autoplay: false,
-    interval: 5000,
+    interval: 1000,
     duration: 1000,
     circular: false
   },
@@ -47,6 +47,11 @@ Page({
       scrollTop: this.data.scrollTop + 10
     })
   },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
   changeAutoplay: function (e) {
     this.setData({
       autoplay: !this.data.autoplay
@@ -64,5 +69,11 @@ Page({
   },
   bchange (e) {
     console.info(e)
+    console.info('图片滚动')
+  },
+  changeCir () {
+    this.setData({
+      circular: !this.data.circular
+    })
   }
 })
