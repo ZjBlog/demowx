@@ -15,8 +15,10 @@ Page({
     duration: 1000,
     circular: false,
     x: 0,
-    y: 0
+    y: 0,
+    timers: 0
   },
+  //生命周期函数--监听页面加载
   onLoad: function () {
     this.setData({
       title: 'Json-Demo'
@@ -83,5 +85,20 @@ Page({
       x: 30,
       y: 30
     });
+  },
+  // 监听页面初次渲染完成
+  onReady() {
+    this.videoCtx = wx.createVideoContext('myVideo')
+  },
+  play() {
+    this.videoCtx.play()
+  },
+  pause() {
+    this.videoCtx.pause()
+  },
+  time (e) {
+    this.setData({
+      timers: e.detail.currentTime
+    })
   }
 })
