@@ -13,7 +13,9 @@ Page({
     autoplay: false,
     interval: 1000,
     duration: 1000,
-    circular: false
+    circular: false,
+    x: 0,
+    y: 0
   },
   onLoad: function () {
     this.setData({
@@ -75,5 +77,11 @@ Page({
     this.setData({
       circular: !this.data.circular
     })
+  },
+  tap: function (e) {
+    this.setData({
+      x: 30,
+      y: 30
+    });
   }
 })
