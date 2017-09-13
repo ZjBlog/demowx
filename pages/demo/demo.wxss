@@ -24,3 +24,21 @@
 .bc_red1 {
   background-color: yellow;
 }
+.bc_yellow {
+  background-color: yellow;
+}
+.scroll-view-item {
+  height: 100px;
+}
+/*view-scroll 横向滚动*/
+.scroll-view_H{
+  white-space: nowrap
+}
+.scroll-view-item_H {
+  width: 200px;
+  height: 100px;
+  display:inline-block;
+}
+.slide-image {
+  width: 100%
+}
