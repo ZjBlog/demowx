@@ -16,4 +16,7 @@
 <view class="btn-area">
   <navigator url="/pages/demo1/demo1" hover-class="navigator-hover">基础内容</navigator>
 </view>
+<view class="btn-area">
+  <navigator url="/pages/demo2/demo2" hover-class="navigator-hover">表单组件</navigator>
+</view>
 </view>
