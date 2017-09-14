@@ -11,6 +11,9 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 <view class="btn-area">
-  <navigator url="/pages/demo/demo" hover-class="navigator-hover">test</navigator>
+  <navigator url="/pages/demo/demo" hover-class="navigator-hover">视图容器</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/demo1/demo1" hover-class="navigator-hover">基础内容</navigator>
 </view>
 </view>

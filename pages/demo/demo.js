@@ -21,7 +21,7 @@ Page({
   //生命周期函数--监听页面加载
   onLoad: function () {
     this.setData({
-      title: 'Json-Demo'
+      title: '视图容器'
     })
   },
   upper: function (e) {

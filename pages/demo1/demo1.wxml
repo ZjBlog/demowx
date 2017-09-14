@@ -1,0 +1,48 @@
+<!--demo.wxml-->
+<view class="center">
+  {{title}}
+</view>
+<view class="center">
+  progress
+</view>
+<progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="{{percent}}" show-info/>
+<button bindtap="per" type='primary'>start</button>
+<view class="center">
+  rich-text
+</view>
+<!-- rich-text.wxml -->
+<rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+<view class="center" >
+  text
+</view>
+<view class="btn-area">
+  <view class="center">
+    <text selectable>{{text}}</text>
+    <button bindtap="add" type='primary'>add line</button>
+    <button bindtap="remove" type='primary'>remove line</button>
+  </view>
+</view>
+<view class="center">
+  icon
+</view>
+<view class="group">
+  <block wx:for="{{iconSize}}" wx:key="*this">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}" wx:key="*this">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+
+
+<view class="group">
+  <block wx:for="{{iconColor}}" wx:key="*this">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view>
