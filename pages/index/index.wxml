@@ -19,4 +19,10 @@
 <view class="btn-area">
   <navigator url="/pages/demo2/demo2" hover-class="navigator-hover">表单组件</navigator>
 </view>
+<view class="btn-area">
+  <navigator url="/pages/demo3/demo3" hover-class="navigator-hover">picker</navigator>
+</view> 
+<view class="btn-area">
+  <navigator url="/pages/demo4/demo4" hover-class="navigator-hover">表单剩余组件</navigator>
+</view> 
 </view>

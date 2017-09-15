@@ -3,6 +3,110 @@
   {{title}}
 </view>
 <view class="center">
+  label
+</view>
+<view class="section section_gap">
+<view class="section__title">表单组件在label内</view>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="label-1" wx:for="{{checkboxItems}}" wx:key="{{index}}">
+  <!--点击label触发checkbox事件-->
+    <label>
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="label-1__icon">
+        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      <text class="label-1__text">{{item.value}}</text>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+ 
+<view class="section section_gap">
+<view class="section__title">label用for标识表单组件</view>
+<radio-group class="group" bindchange="radioChange">
+  <view class="label-2" wx:for="{{radioItems}}" wx:key="{{index}}">
+    <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+    <view class="label-2__icon">
+      <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+    </view>
+    <label class="label-2__text" for="{{item.name}}"><text>{{item.name}}</text></label>
+  </view>
+</radio-group>
+</view> 
+<view class="center">
+  input
+</view>
+<view class="section">
+  <input placeholder="这是一个可以自动聚焦的input" focus/>
+</view>
+<view class="section">
+  <input placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+  </view>
+</view>
+<view class="section">
+  <input  maxlength="10" placeholder="最大输入长度10" />
+</view>
+<view class="section">
+  <view class="section__title">你输入的是：{{inputValue}}</view>
+  <input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+</view>
+<view class="section">
+  <input  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+</view>
+<view class="section">
+  <input password type="number" />
+</view>
+<view class="section">
+  <input password type="text" />
+</view>
+<view class="section">
+  <input type="digit" placeholder="带小数点的数字键盘" confirm-type="go"/>
+</view>
+<view class="section">
+  <input type="idcard" placeholder="身份证输入键盘" />
+</view>
+<view class="section">
+  <input placeholder-style="color:red" placeholder="占位符字体是红色的" />
+</view>
+<view class="center">
+  form
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">slider</view>
+    <slider name="slider" show-value ></slider>
+  </view>
+
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label><radio value="radio1"/>radio1</label>
+      <label><radio value="radio2"/>radio2</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>checkbox1</label>
+      <label><checkbox value="checkbox2"/>checkbox2</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type='primary'>Submit</button>
+    <button formType="reset" type='primary'>Reset</button>
+  </view>
+</form>
+<view class="center">
   checkbox
 </view>
 <checkbox-group bindchange="checkboxChange">

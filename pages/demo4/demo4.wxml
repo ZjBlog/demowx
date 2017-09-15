@@ -1,0 +1,74 @@
+<!--demo.wxml-->
+<view class="center">
+  {{title}}
+</view>
+<view class="center">
+  textarea
+</view>
+<view class="section">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+</view>
+<view class="section">
+  <textarea placeholder="placeholder颜色是红色的" placeholder-style="color:red;"  />
+</view>
+<view class="section">
+  <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+</view>
+<view class="section">
+  <textarea placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+  </view>
+</view>
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="form 中的 textarea" name="textarea"/>
+    <button form-type="submit"> 提交 </button>
+  </form>
+</view>
+<view class="center">
+ switch
+</view>
+<view class="body-view">
+    <switch checked bindchange="switch1Change"/>
+    <switch bindchange="switch2Change"/>
+    <switch bindchange="switch2Change" type='checkbox'/>
+</view>
+<view class="center">
+ slider
+</view>
+<view class="section section_gap">
+  <text class="section__title">设置left/right icon</text>
+  <view class="body-view">
+    <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle" show-value/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">设置step</text>
+  <view class="body-view">
+    <slider bindchange="slider2change" step="5"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">显示当前value</text>
+  <view class="body-view">
+    <slider bindchange="slider3change" show-value/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">设置最小/最大值</text>
+  <view class="body-view">
+    <slider bindchange="slider4change" min="50" max="200" show-value/>
+  </view>
+</view>
+<view class="center">
+  radio
+</view>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}" wx:key="{{item.value}}">
+    <radio value="{{item.name}}" color="red" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
