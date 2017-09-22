@@ -7,7 +7,8 @@
     "pages/demo2/demo2",
     "pages/demo3/demo3",
     "pages/demo4/demo4",
-    "pages/demo5/demo5"
+    "pages/demo5/demo5",
+    "pages/demo6/demo6"
   ],
   "window":{
     "backgroundTextStyle":"light",
