@@ -27,6 +27,10 @@
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"
+      },
+      {
+          "pagePath": "pages/demo/demo",
+          "text": "日志1"
       }
     ]
   }
