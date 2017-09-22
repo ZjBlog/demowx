@@ -1,9 +1,8 @@
+ <import src="../templates/star/star.wxml"/>
 <!--demo.wxml-->
 <view>
   {{title}}
 </view>
  <view class="">
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
-
-  </scroll-view>
+  <template is="starTemplate" data="{{stars:[1,2,3,4,5]}}"/>
 </view> 
