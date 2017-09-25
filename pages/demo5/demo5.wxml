@@ -13,6 +13,7 @@
           <view class='scroll-view-item_X'>
             <image src='{{img.imgUrls}}' class="scroll-img"></image>
             <text class='text-title text-font'>{{img.title}}</text>
+            {{img.rating.average}}-{{img.rating.stars}}-{{img.rating.stars%10}}
             <template is="starTemplate" data="{{score:img.rating.average,stars:img.rating.stars,rem:img.rating.stars%10}}"></template>          
           </view>
         </block>

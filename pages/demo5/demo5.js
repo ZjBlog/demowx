@@ -9,7 +9,7 @@ Page({
           rating: {
             max: 10,
             average: 7.1,
-            stars: "36",
+            stars: "37",
             min: 0
           },
           title: "猩球崛起3:终极之战"
@@ -19,7 +19,7 @@ Page({
           rating: {
             max: 10,
             average: 7.1,
-            stars: "35",
+            stars: "40",
             min: 0
           },
           title: "王牌保镖"
