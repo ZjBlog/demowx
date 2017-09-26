@@ -15,7 +15,7 @@
 </view>
   <view class="btn-area">
   <navigator url="/pages/demo6/demo6" hover-class="navigator-hover">视图</navigator>
-</view> 
+</view>
 <view class="btn-area">
   <navigator url="/pages/demo/demo" hover-class="navigator-hover">视图容器</navigator>
 </view>
@@ -27,14 +27,14 @@
 </view>
 <view class="btn-area">
   <navigator url="/pages/demo3/demo3" hover-class="navigator-hover">picker</navigator>
-</view> 
+</view>
 <view class="btn-area">
   <navigator url="/pages/demo4/demo4?title=nav" hover-class="navigator-hover">表单剩余组件</navigator>
 </view>
 
 <view class="btn-area">
   <button type='primary' bindtap='show'>提示信息</button>
-</view> 
+</view>
 </view>
 <view class="container" wx:else style='background-color: #e9ebf4;'>
   <image src='../../images/icon/loading1.gif' style="width: 250rpx; height: 250rpx;" ></image>
