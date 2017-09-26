@@ -3,7 +3,7 @@
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
-  margin:0px 20rpx;
+  margin:0px 20rpx 20rpx 20rpx;
 }
 .img-icon{
   width: 8rpx;
@@ -37,4 +37,13 @@
 }
 .text-font{
   font-weight: bold;
+}
+.container-text{
+  margin-top: 20rpx;
+}
+.header{
+  background-color: #20A0FF;
+  min-height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
 }

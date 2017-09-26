@@ -1,4 +1,7 @@
  <import src="../templates/star/star.wxml"/>
+<view class="header">
+我现在才知道，他能够开开心心在外面走来走去的，是因为他知道始终有着一个地方等着他！——《春光乍泄》
+ </view>
 <!--demo.wxml-->
 <view class="container-movie" wx:for="{{movieList}}" wx:key="index">
   <view class="container-text">
