@@ -1,7 +1,7 @@
 /**
  * 微信请求
  */
-function requsetForGet (url,params) {
+function requestForGet (url,params) {
   return new Promise((resolve,reject) => {
     wx.request({
       url: url,
@@ -14,7 +14,7 @@ function requsetForGet (url,params) {
     })
   })
 }
-function requsetForPost(url, params) {
+function requestForPost(url, params) {
   return new Promise((resolve, reject) => {
     wx.request({
       url: url,
@@ -27,8 +27,21 @@ function requsetForPost(url, params) {
     })
   })
 }
-
+function requestForGetDb(url, params) {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: url,
+      data: Object.assign({}, params),
+      dataType: 'json',
+      success: resolve,
+      fail: reject,
+      header: { 'Content-Type': 'json' },
+      method: 'GET'
+    })
+  })
+}
 module.exports = {
-  requsetForPost: requsetForPost,
-  requsetForGet: requsetForGet
+  requsetForPost: requestForPost,
+  requsetForGet: requestForGetDb,
+  reqForGet: requestForGet
 }
