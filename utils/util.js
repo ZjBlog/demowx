@@ -31,7 +31,7 @@ function getYesterdayDate() {
   return `${year}-${month}-${day}`
 }
 // 大于7天超时 返回false 不超时返回true
-function isExpire(str) {
+function isExpire7(str) {
   let date = new Date(str).getTime()
   let now = new Date().getTime()
   if (now - date > 1000 * 60 * 60 * 24 * 7) {
@@ -40,9 +40,18 @@ function isExpire(str) {
     return true
   }
 }
+function isExpire(str) {
+  let now = getDate()
+  if (now == str) {
+    return true
+  } else {
+    return false
+  }
+}
 module.exports = {
   formatTime: formatTime,
   getDate: getDate,
   getYesterdayDate,
-  isExpire
+  isExpire,
+  isExpire7
 }
