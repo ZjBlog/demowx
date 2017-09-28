@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/index2/index2",
+    "pages/list/list",
     "pages/index/index",
+    "pages/index2/index2",
     "pages/index1/index1",
     "pages/demo5/demo5",
     "pages/logs/logs",
@@ -10,14 +11,14 @@
     "pages/demo2/demo2",
     "pages/demo3/demo3",
     "pages/demo4/demo4",
-    "pages/demo6/demo6",
-    "pages/list/list"
+    "pages/demo6/demo6"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "onReachBottomDistance": 150
   },
   "tabBar": {
     "selectedColor": "red",

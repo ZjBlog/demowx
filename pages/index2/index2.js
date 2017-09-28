@@ -14,11 +14,11 @@ Page({
       if (isExpire(res.data.time)) {
         console.info('没超时')
       }else {
-        vm.init()
+        // vm.init()
       }
     }).catch(res=>{
       console.info('shibai')
-      vm.init()
+      // vm.init()
     })
   },
   init () {
