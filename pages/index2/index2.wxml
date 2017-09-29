@@ -14,11 +14,24 @@
     </view>
   </view>
 </view>
+<view class='fr'><text>{{item.countries}}-{{item.year}}</text></view>
+<view style='clear:both'></view>
 <view class='con-text'>
 <text class='title'>{{item.title}}</text>
-<text>{{item.countries}}-{{item.year}}</text>
-<text>导演 <text wx:for="{{item.directors}}" wx:key="{{index}}" wx:for-item="dir">{{dir.name}}</text></text>
-<text>影人 <text wx:for="{{item.casts}}" wx:key="{{index}}" wx:for-item="cast">{{cast.name}}</text></text>
-<text>类型 <text wx:for="{{item.genres}}" wx:key="*this" wx:for-item="gen">{{gen}}</text></text>
-<text></text>
+<view class='dd'>导演 : 
+ <text class='ff' wx:for="{{item.directors}}" wx:key="{{index}}" wx:for-item="dir">{{dir.name}}{{(index<item.directors.length-1?'、':'')}}</text>
+ </view>
+<view class='dd'>影人 : 
+<text class='ff' wx:for="{{item.casts}}" wx:key="{{index}}" wx:for-item="cast">{{cast.name}}{{(index<item.casts.length-1?'、':'')}}</text>
 </view>
+<view class='dd'>类型 :  <text class='ff' wx:for="{{item.genres}}" wx:key="*this" wx:for-item="gen">{{gen}}{{(index<item.genres.length-1?'、':'')}}</text>
+</view>
+</view>
+<view class="line"></view>
+<view class='dd jq'>
+    剧情简介 :
+</view>
+<text class='ff'>
+{{item.summary}}
+</text>
+<view class="line"></view>

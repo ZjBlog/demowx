@@ -22,7 +22,7 @@ Page({
           item: res.data.item,
           flag:true
         })
-        //vm.init1()
+     // vm.init1()
       }else {
         vm.init1()
       }

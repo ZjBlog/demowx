@@ -57,12 +57,41 @@ background-color: rgba(0,0,0,0.5);
   color: #D3DCE6
 }
 .con-text{
-  margin-top: 50rpx;
   display: flex;
   display: -webkit-flex;
   flex-direction:column;
-  border: 1px red solid;
+  margin-left: 30rpx;
 }
 .title{
   align-self: flex-end;
+  font-size: 32rpx;
+  color: #20A0FF;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.fr{
+  float: right;
+  margin-right: 20rpx;
+}
+.fr text{
+  font-size: 32rpx;
+  color: #475669;
+}
+.dd{
+  font-family:MicroSoft Yahei;
+  font-size: 32rpx;
+}
+page{
+  background-color: #e9ebf4;
+}
+.ff{
+  color: #20A0FF;
+}
+.line{
+  margin-top: 20rpx;
+  border-top: 4rpx solid #1F2D3D;
+}
+.jq{
+ margin-top: 20rpx;
+ margin-left: 20rpx;
 }
