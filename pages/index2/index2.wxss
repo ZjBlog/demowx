@@ -1,0 +1,68 @@
+@import '../templates/star/star.wxss';
+.header{
+  height: 340rpx;
+}
+.bg{
+  height: 340rpx;
+background-color: rgba(0,0,0,0.5);
+}
+.img{
+  width: 200rpx;
+  height: 285rpx;
+  margin-left: 30rpx;
+  margin-top: 100rpx;
+  float:left;
+}
+
+.font{
+  float:left;
+  margin-top:150rpx;
+  color:#fff;
+  margin-left:40rpx;
+}
+
+.font-star{
+  clear:both;
+}
+
+.font-star .text{
+  float:left;
+}
+
+.font-star .star{
+  float:left;
+}
+.font-text{
+  font-size: 36rpx;
+}
+.font-a{
+  font-size: 44rpx;
+}
+.stars image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.star{
+  margin-left:10rpx;
+}
+
+.f{
+  display: block;
+  margin-top:-8rpx;
+  font-size:24rpx;
+  color:#D3DCE6;
+}
+.star-score{
+  color: #D3DCE6
+}
+.con-text{
+  margin-top: 50rpx;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:column;
+  border: 1px red solid;
+}
+.title{
+  align-self: flex-end;
+}

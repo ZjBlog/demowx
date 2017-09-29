@@ -1,11 +1,10 @@
 {
   "pages":[
-    "pages/list/list",
-    "pages/index/index",
     "pages/index2/index2",
+    "pages/index/index",
+    "pages/list/list",
     "pages/index1/index1",
     "pages/demo5/demo5",
-    "pages/logs/logs",
     "pages/demo/demo",
     "pages/demo1/demo1",
     "pages/demo2/demo2",
