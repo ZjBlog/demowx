@@ -3,10 +3,21 @@
   <image src='{{item.avatars.large}}' class='img'></image>
   <view class='intro'>
       <text class='name'>{{item.name}}</text>
-      <text class='name-other'>{{item.name}}</text>
-      <text class='name-other'>{{item.name}}</text>
+      <text class='name-other'>{{item.name_en}}</text>
+      <text class='name-other'>{{item.born_place}}</text>
   </view>
-</view> 
+</view>
+<view class='line'></view>
+<text class='dai'>代表作</text>
+<view class='con-movie' wx:if="{{flag}}">
+<block wx:for='{{item.works}}' wx:key='index' wx:for-item='movie'>
+  <view class='m-con'>
+    <image src='{{movie.subject.images.large}}' class='movie-img'></image>
+    <text class='title'>{{movie.subject.title}}</text>
+    <template is="starTemplate" data="{{score:movie.subject.rating.average,stars:movie.subject.rating.stars,rem:movie.subject.rating.stars%10}}"></template>  
+  </view>
+</block>
+</view>
 
 
 
