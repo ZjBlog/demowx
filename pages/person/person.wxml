@@ -1,0 +1,12 @@
+<import src="../templates/star/star.wxml"/>
+<view class='con-text' wx:if="{{flag}}">
+  <image src='{{item.avatars.large}}' class='img'></image>
+  <view class='intro'>
+      <text class='name'>{{item.name}}</text>
+      <text class='name-other'>{{item.name}}</text>
+      <text class='name-other'>{{item.name}}</text>
+  </view>
+</view> 
+
+
+

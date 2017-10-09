@@ -1,0 +1,25 @@
+@import '../templates/star/star.wxss';
+page{
+  background-color: #e9ebf4;
+}
+.img{
+  width: 240rpx;
+  height: 343rpx;
+  margin: 20rpx;
+  float: left;
+}
+.name{
+  display: block;
+  font-weight: bolder;
+  font-size: 36rpx;
+  margin-top: 110rpx;
+  margin-left: 40rpx;
+}
+.name-other{
+  display: block;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.intro{
+  float: left;
+}
