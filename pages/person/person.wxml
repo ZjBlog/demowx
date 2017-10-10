@@ -8,7 +8,7 @@
   </view>
 </view>
 <view class='line'></view>
-<text class='dai'>代表作</text>
+<text class='dai'>参演作品</text>
 <view class='con-movie' wx:if="{{flag}}">
 <block wx:for='{{item.works}}' wx:key='index' wx:for-item='movie'>
   <view class='m-con'>

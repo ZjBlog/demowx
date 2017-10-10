@@ -130,6 +130,7 @@ function wxSearchHiddenPancel(that){
 function wxSearchKeyTap(e, that, callBack) {
     //回调
     var temData = that.data.wxSearchData;
+    console.info(e.target.dataset.key)
     temData.value = e.target.dataset.key;
     that.setData({
         wxSearchData: temData
