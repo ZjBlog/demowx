@@ -45,7 +45,8 @@ Page({
         subjects: [],
         total: 0,
         pageNum: 0,
-        down:false
+        down:false,
+        title: ''
       })
       this.search()
       // getStorage('res').then(res => {
@@ -110,6 +111,9 @@ Page({
   },
   wxSearchTap: function (e) {
     var that = this
+    if (this.data.wxSearchData.value) {
+      return
+    }
     WxSearch.wxSearchHiddenPancel(that);
   },
 
@@ -167,15 +171,15 @@ Page({
         down: true
       })
     }
-  },
+  }
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-    return {
-      title: '搜索',
-      path: '/pages/search/search'
-    }
-  }
+  // onShareAppMessage: function () {
+  //   return {
+  //     title: '搜索',
+  //     path: '/pages/search/search'
+  //   }
+  // }
 })

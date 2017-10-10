@@ -22,6 +22,7 @@
   width: 200rpx;
   height: 285rpx;
   margin-right: 40rpx;
+  border-radius: 10rpx;
 }
 .result-search{
   display: flex;

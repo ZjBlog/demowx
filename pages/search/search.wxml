@@ -1,5 +1,5 @@
 <import src="/pages/templates/wxSearch/wxSearch.wxml"/>
- <import src="../templates/star/star.wxml"/>
+<import src="../templates/star/star.wxml"/>
 <view class="wxSearch-section">
   <view class="wxSearch-pancel">
     <input bindinput="wxSearchInput" confirm-type='search' focus bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" bindconfirm='wxSearchFn' />
@@ -7,13 +7,13 @@
   </view>
 </view>
 <template is="wxSearch" data="{{wxSearchData}}"/>
-<view class='con-serach' wx:if="{{init}}">
+<view class='con-serach' wx:if="{{init || wxSearchData.view.isShow}}">
   <image style="width:200px;height:200px;" src="/images/search.svg"  />
 </view>
-<view  wx:if="{{title}}">
-<view class='title-con'>
-  <text class='title'>{{title}}</text>
-</view>
+<view  wx:if="{{title && !wxSearchData.view.isShow}}">
+  <view class='title-con'>
+    <text class='title'>{{title}}</text>
+  </view>
   <view class='result-search' wx:if='{{subjects.length>0}}'>
     <block wx:for="{{subjects}}" wx:key="index">
       <view class='item-result'>
@@ -30,9 +30,13 @@
       <text>抱歉,没有搜到相关电影</text>
   </view>
 </view>
- <view class='ls-bg' wx:if='{{loading}}'>
+
+
+ <view class='ls-bg' wx:if='{{loading &&!wxSearchData.view.isShow}}'>
   <image class='ld' src='/images/icon/ld.svg'></image>
 </view>
+
+
 <view class='ls-bg' wx:if='{{down}}'>
   <text style='color:#20A0FF'>客官,真没了</text>
 </view>
