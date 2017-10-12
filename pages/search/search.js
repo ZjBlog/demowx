@@ -14,7 +14,8 @@ Page({
     subjects:[],
     title: '',
     down: false,
-    init: true
+    init: true,
+    wxSearchData:{}
   },
   /**
    * 生命周期函数--监听页面加载
@@ -99,6 +100,8 @@ Page({
   },
   wxSearchKeyTap: function (e) {
     var that = this
+    console.info('搜素')
+    console.info(e)
     WxSearch.wxSearchKeyTap(e, that);
   },
   wxSearchDeleteKey: function (e) {
@@ -112,8 +115,10 @@ Page({
   wxSearchTap: function (e) {
     var that = this
     if (this.data.wxSearchData.value) {
+      console.info('yincang')
       return
     }
+    console.info('yincang1111111111')
     WxSearch.wxSearchHiddenPancel(that);
   },
 

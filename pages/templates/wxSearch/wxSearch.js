@@ -91,6 +91,8 @@ function wxSearchInput(e, that, callBack){
 
 function wxSearchFocus(e, that, callBack) {
     var temData = that.data.wxSearchData;
+    console.info(e)
+    console.info('获得焦点')
     temData.view.isShow = true;
     that.setData({
         wxSearchData: temData
@@ -110,7 +112,14 @@ function wxSearchFocus(e, that, callBack) {
 }
 function wxSearchBlur(e, that, callBack) {
     var temData = that.data.wxSearchData;
-    temData.value = e.detail.value;
+    console.info('失去焦点')
+    console.info(e)
+    if (!e.detail.value) {
+    }else{
+      temData.value = e.detail.value;
+    }
+    console.info('失去焦点1')
+    console.info(that.data.wxSearchData)
     that.setData({
         wxSearchData: temData
     });

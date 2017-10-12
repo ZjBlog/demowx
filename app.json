@@ -1,9 +1,9 @@
 {
   "pages":[
-    "pages/am/am",
     "pages/search/search",
-    "pages/person/person",
     "pages/index/index",
+    "pages/am/am",
+    "pages/person/person",
     "pages/index2/index2",
     "pages/list/list",
     "pages/index1/index1",
@@ -23,21 +23,27 @@
     "onReachBottomDistance": 150
   },
   "tabBar": {
-    "selectedColor": "red",
-    "color": "#3cc51f",
+    "selectedColor": "#20A0FF",
+    "color": "#767676",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "/images/tab/01.png",
+        "selectedIconPath":"/images/tab/011.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/tab/03.png",
+        "selectedIconPath": "/images/tab/033.png"
       },
       {
           "pagePath": "pages/demo/demo",
-          "text": "日志1"
+          "text": "我",
+          "iconPath": "/images/tab/02.png",
+          "selectedIconPath": "/images/tab/022.png"
       }
     ]
   }

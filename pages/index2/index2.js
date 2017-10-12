@@ -57,5 +57,33 @@ Page({
         console.info('保存成功')
       })
     })
+  },
+  histoty(img){
+    getStorage('history').then(res=>{
+      let items = res.data
+      if (items.indexOf(img)>-1) {
+        console.info('已经存在')
+      }else {
+        if(items.length>19){
+          items.pop()
+          items.unshift(img)
+        }else {
+          items.unshift(img)
+        }
+        setStorage('history', items).then(res => {
+          console.info('保存成功')
+        }).catch((res) => {
+          console.info('保存失败history')
+        })
+      }
+    }).catch(()=>{
+      let temp=[]
+      temp.push(img)
+      setStorage('history', temp).then(res=>{
+        console.info('保存成功')
+      }).catch((res)=>{
+        console.info('保存失败history')
+      })
+    })
   }
 })
